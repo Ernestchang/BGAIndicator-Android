@@ -1,24 +1,24 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     style="@style/MatchMatch.Vertical"
-    android:gravity="center"
-    android:background="@color/srl_orange_light">
+    android:background="@color/srl_orange_light"
+    android:gravity="center">
 
     <cn.bingoogolapple.bgaindicator.BGAFixedIndicator
         android:id="@+id/indicator1"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
         android:background="@color/srl_green_light"
-        app:indicator_triangleColor="@color/srl_red_light"
-        app:indicator_triangleHorizontalMargin="5dp"
-        app:indicator_triangleHeight="2dp"
-        app:indicator_textColor="@color/selector_tab"
-        app:indicator_textSizeNormal="14sp"
-        app:indicator_textSizeSelected="16sp"
-        app:indicator_hasDivider="true"
         app:indicator_dividerColor="@color/srl_blue_bright"
         app:indicator_dividerVerticalMargin="5dp"
         app:indicator_dividerWidth="2dp"
-        android:layout_width="300dp"
-        android:layout_height="40dp" />
+        app:indicator_hasDivider="true"
+        app:indicator_textColor="@color/selector_tab"
+        app:indicator_textSizeNormal="14sp"
+        app:indicator_textSizeSelected="16sp"
+        app:indicator_triangleColor="@color/srl_red_light"
+        app:indicator_triangleHeight="2dp"
+        app:indicator_triangleHorizontalMargin="5dp" />
 
     <android.support.v4.view.ViewPager
         android:id="@+id/pager1"
@@ -26,40 +26,54 @@
 
     <cn.bingoogolapple.bgaindicator.BGAFixedIndicator
         android:id="@+id/indicator2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
         android:background="@color/srl_green_light"
-        app:indicator_triangleColor="@color/srl_red_light"
-        app:indicator_triangleHorizontalMargin="0dp"
-        app:indicator_triangleHeight="2dp"
-        app:indicator_textColor="@color/selector_tab"
-        app:indicator_textSizeNormal="14sp"
-        app:indicator_textSizeSelected="16sp"
-        app:indicator_hasDivider="true"
         app:indicator_dividerColor="@color/srl_blue_bright"
         app:indicator_dividerVerticalMargin="5dp"
         app:indicator_dividerWidth="2dp"
-        android:layout_width="match_parent"
-        android:layout_height="40dp" />
+        app:indicator_hasDivider="true"
+        app:indicator_textColor="@color/selector_tab"
+        app:indicator_textSizeNormal="14sp"
+        app:indicator_textSizeSelected="16sp"
+        app:indicator_triangleColor="@color/srl_red_light"
+        app:indicator_triangleHeight="2dp"
+        app:indicator_triangleHorizontalMargin="0dp" />
 
     <android.support.v4.view.ViewPager
         android:id="@+id/pager2"
-        android:layout_width="match_parent"
-        style="@style/MatchAuto" />
+        style="@style/MatchAuto"
+        android:layout_width="match_parent" />
 
-    <cn.bingoogolapple.bgaindicator.BGAFixedIndicator
+    <cn.bingoogolapple.bgaindicator.ErViewPagerIndicator
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/indicator3"
-        android:background="@color/srl_green_light"
-        app:indicator_triangleColor="@color/srl_red_light"
-        app:indicator_triangleHorizontalMargin="0dp"
-        app:indicator_triangleHeight="2dp"
-        app:indicator_textColor="@color/selector_tab"
-        app:indicator_textSizeNormal="14sp"
-        app:indicator_textSizeSelected="16sp"
-        app:indicator_hasDivider="false"
-        app:indicator_dividerColor="@color/srl_blue_bright"
-        app:indicator_dividerVerticalMargin="5dp"
-        app:indicator_dividerWidth="2dp"
         android:layout_width="match_parent"
-        android:layout_height="40dp" />
+        android:layout_height="40dp"
+        android:background="@color/srl_green_light"
+        app:er_hasDivider="false"
+        app:er_textColor="@color/selector_tab"
+        app:er_textSizeNormal="14sp"
+        app:er_textSizeSelected="16sp"
+        app:er_triangleColor="@color/srl_red_light"
+        app:er_triangleHeight="2dp"
+        app:er_triangleHorizontalMargin="0dp" />
+
+    <!--<cn.bingoogolapple.bgaindicator.BGAFixedIndicator-->
+    <!--android:id="@+id/indicator3"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:background="@color/srl_green_light"-->
+    <!--app:indicator_dividerColor="@color/srl_blue_bright"-->
+    <!--app:indicator_dividerVerticalMargin="5dp"-->
+    <!--app:indicator_dividerWidth="2dp"-->
+    <!--app:indicator_hasDivider="true"-->
+    <!--app:indicator_textColor="@color/selector_tab"-->
+    <!--app:indicator_textSizeNormal="14sp"-->
+    <!--app:indicator_textSizeSelected="16sp"-->
+    <!--app:indicator_triangleColor="@color/srl_red_light"-->
+    <!--app:indicator_triangleHeight="2dp"-->
+    <!--app:indicator_triangleHorizontalMargin="0dp" />-->
 
     <android.support.v4.view.ViewPager
         android:id="@+id/pager3"

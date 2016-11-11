@@ -11,6 +11,7 @@ import cn.bingoogolapple.bgaannotation.BGAA;
 import cn.bingoogolapple.bgaannotation.BGAALayout;
 import cn.bingoogolapple.bgaannotation.BGAAView;
 import cn.bingoogolapple.bgaindicator.BGAFixedIndicator;
+import cn.bingoogolapple.bgaindicator.ErViewPagerIndicator;
 import cn.bingoogolapple.bgaindicator.demo.R;
 import cn.bingoogolapple.bgaindicator.demo.ui.fragment.ContentFragment;
 
@@ -28,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     private ViewPager mPager2;
 
     @BGAAView(R.id.indicator3)
-    private BGAFixedIndicator mIndicator3;
+    private ErViewPagerIndicator mIndicator3;
     @BGAAView(R.id.pager3)
     private ViewPager mPager3;
 

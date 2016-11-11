@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <attr name="er_textColor" format="color|reference" />
+    <attr name="er_textSizeNormal" format="dimension|reference" />
+    <attr name="er_textSizeSelected" format="dimension|reference" />
+    <attr name="er_triangleHorizontalMargin" format="dimension|reference" />
+    <attr name="er_triangleColor" format="color|reference" />
+    <attr name="er_triangleHeight" format="dimension|reference" />
+    <attr name="er_hasDivider" format="boolean" />
+    <attr name="er_dividerColor" format="color|reference" />
+    <attr name="er_dividerWidth" format="dimension|reference" />
+    <attr name="er_dividerVerticalMargin" format="dimension|reference" />
+
     <declare-styleable name="BGAIndicator">
         <attr name="indicator_textColor" format="color|reference" />
         <attr name="indicator_textSizeNormal" format="dimension|reference" />
@@ -11,5 +23,19 @@
         <attr name="indicator_dividerColor" format="color|reference" />
         <attr name="indicator_dividerWidth" format="dimension|reference" />
         <attr name="indicator_dividerVerticalMargin" format="dimension|reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ErViewPagerIndicator">
+        <attr name="er_textColor" />
+        <attr name="er_textSizeNormal" />
+        <attr name="er_textSizeSelected" />
+        <attr name="er_triangleHorizontalMargin" />
+        <attr name="er_triangleColor" />
+        <attr name="er_triangleHeight" />
+        <attr name="er_hasDivider" />
+        <attr name="er_dividerColor" />
+        <attr name="er_dividerWidth" />
+        <attr name="er_dividerVerticalMargin" />
     </declare-styleable>
 </resources>
